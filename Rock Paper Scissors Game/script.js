@@ -8,6 +8,7 @@ const paper_beats_rock_you_win = "Computer chose Rock while you chose Paper. Pap
 const scissors_beats_paper_you_lose = "Computer chose Scissors while you chose Paper. Scissors beats Paper, you lose..."
 const rock_beats_scissors_you_lose = "Computer chose Rock while you chose Scissors. Rock beats Scissors, you lose..."
 const scissors_beats_paper_you_win = "Computer chose Paper while you chose Scissors. Scissors beats Paper, you win!"
+const miscellaneous = " Please key in either Rock Paper or Scissors or we will deduct your score!!! "
 let player_score = 0;
 let computer_score = 0;
 
@@ -45,7 +46,7 @@ function playRound (playerSelection, computerSelection){
     } else if (playerSelection == "scissors" && computerSelection == "paper"){
         return scissors_beats_paper_you_win
     } else{
-        alert("Please key in either Rock Paper or Scissors or we will deduct your score!!! ")
+        return miscellaneous
     }
 }
 
