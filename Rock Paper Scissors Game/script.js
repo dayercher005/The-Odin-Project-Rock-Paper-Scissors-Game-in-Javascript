@@ -89,34 +89,13 @@ playRound(playerSelection, computerSelection)
 showPlayRound(playerSelection, computerSelection)
 playGame()
 
-computerSelection=GetComputerChoice()
-playerSelection = prompt("Choose either Rock, Paper or Scissors")
-playerSelection = playerSelection.toLowerCase()
-playRound(playerSelection, computerSelection)
-showPlayRound(playerSelection, computerSelection)
-playGame()
-
-
-playerSelection = prompt("Choose either Rock, Paper or Scissors")
-playerSelection = playerSelection.toLowerCase()
-computerSelection=GetComputerChoice()
-playRound(playerSelection, computerSelection)
-showPlayRound(playerSelection, computerSelection)
-playGame()
-
-playerSelection = prompt("Choose either Rock, Paper or Scissors")
-playerSelection = playerSelection.toLowerCase()
-computerSelection=GetComputerChoice()
-playRound(playerSelection, computerSelection)
-showPlayRound(playerSelection, computerSelection)
-playGame()
-
-playerSelection = prompt("Choose either Rock, Paper or Scissors")
-playerSelection = playerSelection.toLowerCase()
-computerSelection=GetComputerChoice()
-playRound(playerSelection, computerSelection)
-showPlayRound(playerSelection, computerSelection)
-playGame()
+for(let i = 0; i<4; i++){
+     playerSelection = prompt("Choose either Rock, Paper or Scissors")
+     playerSelection = playerSelection.toLowerCase()
+     computerSelection=GetComputerChoice()
+     playRound(playerSelection, computerSelection)
+     showPlayRound(playerSelection, computerSelection)
+     playGame()
 
 if(player_score>computer_score){
     alert("Congratulations, you've won!")
